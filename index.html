@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Livraria Bookstore </title>
+
+    <!--    Swipper css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!--CSS--->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+    <body>
+
+    <!--Inicio header--->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo">  <i class="fas fa-book"></i> Bookstore </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Procure aqui seu livro..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">Inicio</a>
+                <a href="#featured">Recomendados</a>
+                <a href="#arrivals">Novidade</a>
+                <a href="#reviews">Avaliações</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+
+    </header>
+
+<!--Fim header-->
+
+<!-- Botão navbar-->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#contact" class="fa-solid fa-envelope"></a>
+    </nav>
+
+<!--Login formulário-->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+
+        <form action="">
+            <h3>Entrar</h3>
+            <span>Email de usuário</span>
+            <input type="email" class="box" name="" placeholder="Digite aqui seu e-mail" >
+            <span>Senha</span>
+            <input type="password" class="box" name="" placeholder="Digite aqui sua senha" >
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> Lembrar minha senha</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+            <p>Não possui uma conta? <a href="#">Clique aqui para se registrar</a></p>
+        </form>
+
+
+    </div>
+
+<!--        Inicio sessões-->
+
+<!--    sessão home-->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Produtos com Até 75% de descontos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    A accusantium, ad architecto commodi consectetur dignissimos dolore
+                    esse excepturi incidunt, porro repellat tempore!
+                    Atque impedit numquam quam quibusdam reiciendis soluta veniam.</p>
+                <a href="#" class="btn">Compre agora</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"> <img src="./assets/img/book-1.png" alt="book1"> </a>
+                    <a href="#" class="swiper-slide"> <img src="./assets/img/book-2.png" alt="book2"> </a>
+                    <a href="#" class="swiper-slide"> <img src="./assets/img/book-3.png" alt="book3"> </a>
+                    <a href="#" class="swiper-slide"> <img src="./assets/img/book-4.png" alt="book4"> </a>
+                    <a href="#" class="swiper-slide"> <img src="./assets/img/book-5.png" alt="book5"> </a>
+                    <a href="#" class="swiper-slide"> <img src="./assets/img/book-7.png" alt="book6"> </a>
+                </div>
+                <img src="./assets/img/stand.png" class="stand" alt="stand">
+            </div>
+
+
+        </div>
+
+    </section>
+<!--    Fim sessão home-->
+<!--    sessão icones-->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div class="content">
+                <h3>Entrega grátis</h3>
+                <p>Em compras a partir de R$100</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Pagamento seguro</h3>
+                <p>Pagamento 100% seguro</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Reembolso garantido</h3>
+                <p>Em até 7 dias devolvemos seu dinheiro</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>Suporte 24/7</h3>
+                <p>Ligue a qualquer momento</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <div class="content">
+                <h3>Cashback</h3>
+                <p>Nas suas compras</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-bitcoin"></i>
+            <div class="content">
+                <h3>Praticidade</h3>
+                <p>Aceitamos também criptomoedas</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+<!--    fim sessão icones-->
+
+<!--    Sessão promoção inicio-->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>Livros Recomendados</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/historiadouniverso.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/brascubas.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/lima.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/orwell-1984.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/domquixote.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/annefrank.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/petitprince.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/451.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/son-of-the-morning.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/orwell-rvbichos.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$25.99 <span>R$35.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+<!--    Fim sessão recomendados-->
+
+
+<!--    Sessão de newsletter - inicio -->
+
+    <section class="newsletter">
+        <form action="">
+            <h3>Se inscreva para ficar por dentro das novidades</h3>
+            <input type="email" name="" placeholder="Digite seu email aqui" id="" class="box">
+            <input type="submit" value="Confirmar inscrição" class="btn">
+        </form>
+    </section>
+    <!--    Sessão de newsletter - Fim -->
+
+<!--    Novidades seção - inicio-->
+
+    <section class="arrivals" id="arrivals">
+
+        <h1 class="heading"> <span>Novidades na Bookstore</span> </h1>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/orwell-rvbichos.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/451.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/petitprince.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/annefrank.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/domquixote.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/orwell-1984.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/lima.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/orwell-1984.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/book-9.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assets/img/book-10.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Nome do livro</h3>
+                        <div class="price">R$15.99 <span>R$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!--Sessão de (promoções:deal ) inicio-->
+
+    <section class="deal">
+
+        <div class="content">
+            <h3>Promoção relâmpago</h3>
+            <h1>Até em 50% de descontos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ad blanditiis illo incidunt itaque nostrum optio perspiciatis
+                quos repudiandae sapiente voluptatibus.</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+        
+        <div class="image">
+            <img src="./assets/img/deal-img.jpg" alt="">
+        </div>
+
+    </section>
+    <!--Sessão de (promoções:deal ) fim-->
+
+<!--Review section - inicio -->
+
+    <section class="reviews" id="reviews">
+
+    <h1 class="heading"><span>Avaliação dos consumidores   </span></h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="./assets/img/pic-1.png">
+                <h3>John</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At doloremque earum fugiat maiores minima pariatur perspiciatis quasi
+                    repudiandae sunt totam. Esse excepturi fuga, minus modi quisquam repellendus!
+                    Cum, eaque, ipsum!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./assets/img/pic-2.png">
+                <h3>Sarah</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At doloremque earum fugiat maiores minima pariatur perspiciatis quasi
+                    repudiandae sunt totam. Esse excepturi fuga, minus modi quisquam repellendus!
+                    Cum, eaque, ipsum!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./assets/img/pic-3.png">
+                <h3>Andrew</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At doloremque earum fugiat maiores minima pariatur perspiciatis quasi
+                    repudiandae sunt totam. Esse excepturi fuga, minus modi quisquam repellendus!
+                    Cum, eaque, ipsum!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./assets/img/pic-4.png">
+                <h3>Laiza</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At doloremque earum fugiat maiores minima pariatur perspiciatis quasi
+                    repudiandae sunt totam. Esse excepturi fuga, minus modi quisquam repellendus!
+                    Cum, eaque, ipsum!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./assets/img/pic-5.png">
+                <h3>Gabriel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At doloremque earum fugiat maiores minima pariatur perspiciatis quasi
+                    repudiandae sunt totam. Esse excepturi fuga, minus modi quisquam repellendus!
+                    Cum, eaque, ipsum!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./assets/img/pic-6.png">
+                <h3>Elisa</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    At doloremque earum fugiat maiores minima pariatur perspiciatis quasi
+                    repudiandae sunt totam. Esse excepturi fuga, minus modi quisquam repellendus!
+                    Cum, eaque, ipsum!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </section>
+<!--    Review - fim-->
+
+<!--Footer inicio-->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Localizações</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Rio de Janeiro </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> São Paulo </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Minas Gerais </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Pernambuco </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Paraná </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Santa Catarina </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Rio Grande do Sul </a>
+            </div>
+
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> Inicio </a>
+                <a href="#featured"> <i class="fas fa-arrow-right"></i> Recomendados </a>
+                <a href="#arrivals"> <i class="fas fa-arrow-right"></i> Novidades </a>
+                <a href="#reviews"> <i class="fas fa-arrow-right"></i> Avaliações </a>
+            </div>
+
+            <div class="box">
+                <h3>Perfil</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Minha conta </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Pedidos </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Politica de privacidade </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Formas de pagamento </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Nossos serviços </a>
+            </div>
+
+            <div class="box" id="contact">
+                <h3>Contatos</h3>
+                <a href="#"> <i class="fas fa-phone"></i> (11) 123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (21) 123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (31) 123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (41) 123-456-7890 </a>
+                <a href="#"> <i class="fas fa-phone"></i> (51) 123-456-7890 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> bookstore@contato.com </a>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit"><span>Bookstore &copy;</span> | todos os direitos reservados! </div>
+
+    </section>
+
+
+
+<!--    Footer fim-->
+
+
+
+
+
+
+
+
+
+
+<!--Swipper javascript-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!--    Javascript main-->
+    <script src="./assets/js/main.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
